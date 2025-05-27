@@ -1,34 +1,78 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Lohmander</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      html, body {
-        margin: 10px;
-        font-family: -apply-system, BlinkMacSystemFont, sans-serif;
-      }
+    <head>
+        <title>Lohmander</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            html,
+            body {
+                margin: 10px;
+                font-family: "Rethink Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: <weight>;
+                font-style: normal;
+            }
 
-      main {
-        max-width: 600px;
-        margin: 0 auto;
-      }
+            main {
+                max-width: 600px;
+                margin: 2em auto;
+            }
 
-      h1 {
-        text-align: center;
-      }
+            h1 {
+                font-weight: 500;
+                margin: 0;
+            }
 
-      p {
-        line-height: 1.5;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>Hannes Lohmander</h1>
-      <p>
-      I'm an AI researcher at <a href="https://www.yonsei.ac.kr/">Yonsei University</a>, as well as a software consultant. If you're interested in working with me, consider sending an email to <a href="mailto:hello@lohmander.org">hello@lohmander.org</a>.
-      </p>
-    </main>
-  </body>
+            p {
+                line-height: 1.5;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 1em 0;
+            }
+
+            ul a {
+                text-decoration: none;
+            }
+
+            ul a:hover span {
+                text-decoration: underline;
+            }
+
+            .icon {
+                height: 1em;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Hannes Lohmander</h1>
+            <ul>
+                <li>
+                    <a href="https://github.com/lohmander">
+                        <img
+                            class="icon"
+                            src="media/github-mark.svg"
+                            alt="Github"
+                        />
+                        <span> @lohmander </span>
+                    </a>
+                </li>
+            </ul>
+            <p>
+                I'm an independent researcher and software consultant. If you're
+                interested in working with me, consider sending an email to
+                <a href="mailto:hannes@lohmander.org">hannes@lohmander.org</a>.
+            </p>
+        </main>
+    </body>
 </html>
